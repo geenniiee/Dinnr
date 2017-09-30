@@ -1,20 +1,39 @@
 h1 {
-  font-family: "helvetica";
-  font-weight: 400;
+font-family: helvetica;
+font-weight: 400;
 }
 
 td {
   text-align: right;
 }
 
-th {
-  text-align:left;
+th
+{
+  text-align: left;
 }
 
 th.column1 {
-  text.align: center;
+  text-align: center;
 }
 
 th.column2 {
+  text-align: center;
+}
+
+h1.recipe {
+text-align: center;
+}
+
+th.recipe {
+  font-family: fantasy;
+  text-decoration-color: blue
+}
+
+img {
+   padding:1px;
+   border:1px solid #021a40;
+}
+
+ol.recipelist {
   text-align: center;
 }
