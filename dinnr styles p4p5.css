@@ -7,6 +7,12 @@ td {
   text-align: right;
 }
 
+/*p5 ends here. Ruby scrapped most of the HTML/CSS code with a better template.*/
+
+td.p4ing {
+  text-align: justify;
+}
+
 th
 {
   text-align: left;
@@ -34,6 +40,12 @@ img {
    border:1px solid #021a40;
 }
 
-ol.recipelist {
+h3.recipelist {
   text-align: center;
 }
+
+td.p4dir {
+  text-align: justify;
+}
+
+/*p4 ends here.*/
