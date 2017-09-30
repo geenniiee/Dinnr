@@ -1,0 +1,68 @@
+h1 {
+  font-weight:400;
+  font-size: 75px;
+  color: #000;
+  text-align: center;
+  font-family: "ITC Frankiln Gothic";
+}
+
+p {
+  font-weight: lighter;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  font-family: serif;
+}
+
+a {
+  text-align: center;
+  font-family: serif;
+  display: block;
+  color: #000;
+}
+
+#option1 {
+  color: #000;
+  text-align:center;
+  font-family: inherit;
+  font-weight:400;
+}
+
+#option2 {
+  color: #000;
+  text-align:center;
+  font-family: inherit;
+  font-weight:400;
+}
+
+#search {
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  font-family:"";
+
+}
+
+input {
+  text-align: center;
+  font-family: Comic;
+  font-size: 30px;
+  color: #f00;
+}
+
+form {
+  text-align: center;
+}
+
+.regForms {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black
+}
+
+.addressLines {
+  line-style: none
+}
