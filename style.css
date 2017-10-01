@@ -82,3 +82,42 @@ form {
 .addressLines {
   line-style: none
 }
+
+/* Style the header */
+.creater {
+  background-color:#FFA07A;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  font-family: helvetica;
+}
+
+.food {
+    font-size: 18px;
+    text-align: center;
+}
+
+.popular {
+  text-align: center;
+  font-family: helvetica;
+}
+
+.potato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frecipe {
+  font-family: helvetica;
+}
+
+.registration1 {
+  font-family: helvetica;
+}
+
+.action {
+  font-family: helvetica;
+  
+}
