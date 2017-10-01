@@ -1,0 +1,36 @@
+<h3 onclick="tacoTitle()"> Taco's </h3>
+<br/>
+  <div onclick="tacoIngredients()" id="tacosTitle">
+    <h6> Ingredients: </h6>
+    <ul>
+      <li> 1 pound lean (at least 80%) ground beef </li>
+      <li> cup Old El Paso Thick&trade; Thick 'n Crusty salsa </li>
+      <li> 10 Old El PasoThink&trade;taco shells </li>
+      <li> 1/2 head lettuce, shredded </li>
+      <li> 1 medium tomato, chopped (3/4 cup) </li>
+      <li> 1 cup shredded Cheddar cheese (4 ounces) </li>
+    </ul>
+  </div>
+
+
+<script>
+
+  function tacoTitle() {
+    var x = document.getElementById('tacosTitle');
+    if (x.style.display === 'none') {
+       x.style.display = 'block';
+    } else {
+         x.style.display = 'none';
+    }
+  }
+
+  function tacoIngredients() {
+    var x = document.getElementById('tacosIngredients');
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+  }
+  
+</script>
