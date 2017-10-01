@@ -9,15 +9,18 @@ body {
   margin: 0;
   min-width: 250px;
 }
+
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
 }
+
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
   padding: 0;
 }
+
 /* Style the list items */
 ul li {
   cursor: pointer;
@@ -26,19 +29,21 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-  font-family: helvetica;
 
 /* style further inquries*?
+
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
   background:#F5F5F5 ;
 }
+
 /* Darker background-color on hover */
 ul li: hover{
   background: #FFFAFA;
@@ -47,6 +52,7 @@ ul li: hover{
 ul li.checked {
   text-decoration: line-through;
 }
+
 /* Style the close button */
 .close {
   position: absolute;
@@ -54,10 +60,12 @@ ul li.checked {
   top: 0;
   padding: 12px 16px 12px 16px;
 }
+
 .close:hover {
   background-color: #F5F5F5;
   color: white;
 }
+
 /* Style the header */
 .header {
   background-color:#FFA07A;
@@ -65,12 +73,14 @@ ul li.checked {
   color: white;
   text-align: center;
 }
+
 /* Clear floats after the header */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /* Style the input */
 input {
   border: none;
@@ -79,6 +89,7 @@ input {
   float: left;
   font-size: 16px;
 }
+
 /* Style the "Add" button */
 .addBtn {
   padding:5px;
@@ -91,118 +102,88 @@ input {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .addBtn:hover {
   background-color: #bbb;
 }
-
-/*.image {
-  display: none;
-}*/
-
-.tortillas {
-  display:none;
-}
-
 </style>
 </head>
 <body>
 
+
 <div id="myDIV" class="header">
-  <h1 style="margin:5px">
-    Taco Party
-  </h1>
+  <h2 style="margin:5px">Taco Party</h2>
   <br>
+ <input type="text" id="myInput3" placeholder="Time">
+  <input type="text" id="myInput2" placeholder="Date">
+  <input type="text" id="myInput2" placeholder="Location">
+
   <input type="text" id="myInput" placeholder="Extra...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
 <ul id="myUL">
-  <li class="checked"> <img id="image1" class="image" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11809998_1876698399222302_1601346780_a.jpg" width="50" height="50">
-    Taco Shells</li>
-
-
-  <li <div onclick= "imageToggle()"><img id="tortilla" class="tortillas"src="https://cnet1.cbsistatic.com/img/eOpz5ALA-94CFHrFVMumEL6CxIU=/fit-in/970x0/2015/09/30/32f3279c-9d71-4f10-b7cc-2825a6f65449/selfie-indoors-low-light-iphone-6s-plus-rotated.jpg" width="50" height="50">
-    Tortillas
-  </div>
-
-</li>
+  <li>Tortillas</li>
+  <li class="checked">Taco Shells</li>
   <li>Onions</li>
-  <li>Shredded Cheddar Cheese</li>
+  <li>Cheddar Cheese</li>
   <li>Lettuce</li>
   <li>Tomatoes</li>
-  <li>Taco Seasoning</li>
-
 </ul>
-<script>
-function imageToggle() {
-  var x = document.getElementById('image1');
-    if (x.style.display === 'block') {
-        x.style.display = 'none';
-    } else {
-        x.style.display = 'block';
-    }
-}
-</script>
-
-<script>
-function imageToggle() {
-  var x = document.getElementById('tortilla');
-    if (x.style.display === 'block') {
-        x.style.display = 'none';
-    } else {
-        x.style.display = 'block';
-    }
-}
-</script>
 
 <script>
 // Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
+var myNodelist = document.getElementsByTagName("LI")
 var i;
 for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
+  var span = document.createElement("SPAN")
+  var txt = document.createTextNode("\u00D7")
+  span.className = "close"
+  span.appendChild(txt)
+  myNodelist[i].appendChild(span)
 }
+
 // Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
+var close = document.getElementsByClassName("close")
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
+    var div = this.parentElement
+    div.style.display = "none"
   }
 }
+
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
+    ev.target.classList.toggle('checked')
   }
-}, false);
+}, false)
+
 // Create a new list item when clicking on the "Add" button
 function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
+  var li = document.createElement("li")
+  var inputValue = document.getElementById("myInput").value
+  var t = document.createTextNode(inputValue)
+  li.appendChild(t)
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("You must write something!")
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("myUL").appendChild(li)
   }
-  document.getElementById("myInput").value = "";
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+  document.getElementById("myInput").value = ""
+
+  var span = document.createElement("SPAN")
+  var txt = document.createTextNode("\u00D7")
+  span.className = "close"
+  span.appendChild(txt)
+  li.appendChild(span)
+
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
+      var div = this.parentElement
+      div.style.display = "none"
     }
   }
 }
