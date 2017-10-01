@@ -1,0 +1,31 @@
+.parent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.recipes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+} 
+.popular-recipes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+} 
+.food {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.search {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
