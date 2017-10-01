@@ -4,35 +4,47 @@ font-weight: 400;
 text-align: center;
 }
 
-td {
+/*td {
   text-align: right;
-}
+}*/
 
 /*p5 ends here. Ruby scrapped most of the HTML/CSS code with a better template.*/
-
-td.p4ing {
-  text-align: justify;
-}
 
 th
 {
   text-align: left;
 }
 
+/*Ingredients Heading*/
+
+th.column2 {
+  text-align: center;
+  font-size: 24px;
+  font-family: Helvetica
+
+}
+
+/*Ingredients Body*/
+
+td.p4ing {
+  text-align: justify;
+  font-size: 18px;
+  font-family: helvetica;
+
+}
+
 th.column1 {
   text-align: center;
 }
 
-th.column2 {
-  text-align: center;
-}
+
 
 h1.recipe {
 text-align: center;
 }
 
 th.recipe {
-  font-family: fantasy;
+  font-family: helvetica;
   text-decoration-color: blue
 }
 
@@ -45,8 +57,30 @@ h3.recipelist {
   text-align: center;
 }
 
+/*Directions Body*/
 td.p4dir {
   text-align: justify;
+  font-size: 18px;
+  font-family: Helvetica
+
+}
+
+/*Salmon Header Style*/
+.recipe {
+  background-color:#FFA07A;
+  padding: 50px 60px;
+  color: white;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 65px
+
+}
+
+/*Directions Heading*/
+strong.directions {
+  font-size: 24px;
+  font-family: Helvetica;
+
 }
 
 /*p4 ends here.*/
