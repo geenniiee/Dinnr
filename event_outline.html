@@ -26,6 +26,8 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
+  font-family: helvetica;
+
 /* style further inquries*?
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -97,19 +99,23 @@ input {
 <body>
 
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">Taco Party</h2>
+  <h1 style="margin:5px">
+    Taco Party
+  </h1>
   <br>
   <input type="text" id="myInput" placeholder="Extra...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
 <ul id="myUL">
-  <li>Tortillas</li>
-  <li class="checked">Taco Shells</li>
+  <li>Taco Shells</li>
+  <li class="checked">Tortillas</li>
   <li>Onions</li>
-  <li>Cheddar Cheese</li>
+  <li>Shredded Cheddar Cheese</li>
   <li>Lettuce</li>
   <li>Tomatoes</li>
+  <li>Taco Seasoning</li>
+
 </ul>
 
 <script>
