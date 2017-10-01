@@ -5,20 +5,96 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-  </head>
+<style>
+  form {
+    border: 3px solid #f1f1f1;
+}
 
-  <body>
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing:border-box;
+}
+
+button {
+    background-color: #FFA07A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #FFA07A;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+header {
+  text-align: center;
+}
+
+.title {
+  display: block;
+  height: 6em;
+}
+
+#container {
+  background-color: #f1f1f1;
+}
+h1 {
+font-family: helvetica;
+font-weight: 400;
+}
+
+</style>
+</head>
+<body>
   <div style="text-align:center">
   <span style="display:block; height: 6em;"></span>
     <h1> DinnR </h1>
-<form action = "login_success.html">
-   <input type="text" name="username" style="color:black;" placeholder="Username">
- </br>
-   <input type="password" name="password" style="color:black;" placeholder="Password">
- <br/>
-   <input type="submit" style="color:black;" value="Login" name="submit_login">
- <br/>
- </form>
+
+    <form action = "login_success.html">
+      <input type="text" name="username" style="color:black;" placeholder="Username">
+   </br>
+     <input type="password" name="password" style="color:black;" placeholder="Password">
+   <br/>
+     <button type="submit" onclick="./login_success.html">Login</button>
+   </form>
  <form action = "register.html">
-   <input type="submit" style="color:black;" value="Register" name="submit_register">
+   <button type="submit" style="color:white;" value="Register" name="submit_register">Register</button>
  </form>
