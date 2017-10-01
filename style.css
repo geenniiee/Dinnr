@@ -24,15 +24,31 @@ a {
 #option1 {
   color: #000;
   text-align:center;
-  font-family: inherit;
+  font-family: helvetica;
   font-weight:400;
+  font-size: 24px;
+  /*Salmon Header Style*/
+    background-color:#FFA07A;
+    padding: 50px 60px;
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 65px;
 }
 
 #option2 {
   color: #000;
   text-align:center;
-  font-family: inherit;
+  font-family: helvetica;
   font-weight:400;
+  font-size: 24px;
+  /*Salmon Header Style*/
+    background-color:#FFA07A;
+    padding: 50px 60px;
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 65px
 }
 
 #search {
