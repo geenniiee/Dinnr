@@ -106,6 +106,15 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+/*.image {
+  display: none;
+}*/
+
+.tortillas {
+  display:none;
+}
+
 </style>
 </head>
 <body>
@@ -123,13 +132,43 @@ input {
 </div>
 
 <ul id="myUL">
-  <li>Tortillas</li>
-  <li class="checked">Taco Shells</li>
+  <li class="checked"> <img id="image1" class="image" src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11809998_1876698399222302_1601346780_a.jpg" width="50" height="50">
+    Taco Shells</li>
+
+
+  <li <div onclick= "imageToggle()"><img id="tortilla" class="tortillas"src="https://cnet1.cbsistatic.com/img/eOpz5ALA-94CFHrFVMumEL6CxIU=/fit-in/970x0/2015/09/30/32f3279c-9d71-4f10-b7cc-2825a6f65449/selfie-indoors-low-light-iphone-6s-plus-rotated.jpg" width="50" height="50">
+    Tortillas
+  </div>
+
+</li>
   <li>Onions</li>
-  <li>Cheddar Cheese</li>
+  <li>Shredded Cheddar Cheese</li>
   <li>Lettuce</li>
   <li>Tomatoes</li>
+  <li>Taco Seasoning</li>
+
 </ul>
+<script>
+function imageToggle() {
+  var x = document.getElementById('image1');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+</script>
+
+<script>
+function imageToggle() {
+  var x = document.getElementById('tortilla');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+</script>
 
 <script>
 // Create a "close" button and append it to each list item
